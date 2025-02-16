@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     align-items: center; /* Align everything to the left */
     gap: 5px; /* Add spacing between elements */
+    margin-top: -200px;
 }
 
 .name {
@@ -26,4 +27,12 @@ main {
     font-size: 14px;
     color: gray;
     line-height: 1.4;
+}
+
+.pfp {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 300px;
+    border-radius: 50%;
 }
