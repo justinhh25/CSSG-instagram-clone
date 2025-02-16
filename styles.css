@@ -1,25 +1,39 @@
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Align everything to the left */
-    gap: 5px; /* Add spacing between elements */
-    margin-top: -200px;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: white;
 }
 
-.name {
-    font-size: 22px;
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+    max-width: 600px;
+}
+
+.pfp {
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 20px;
     font-weight: bold;
 }
 
 .stats {
-    margin-left: 200px;
     display: flex;
-    flex-direction: row;
-    gap: 15px; /* Adjust spacing between stats */
+    gap: 15px;
 }
 
 .stats h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -27,12 +41,4 @@ main {
     font-size: 14px;
     color: gray;
     line-height: 1.4;
-}
-
-.pfp {
-    display: flex; 
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 300px;
-    border-radius: 50%;
 }
